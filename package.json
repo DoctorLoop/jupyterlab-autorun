@@ -1,5 +1,5 @@
 {
-  "name": "jupyterlab-autorun-update",
+  "name": "jupyterlab-autorun-update_reword",
   "version": "0.0.1",
   "description": "A JupyterLab extension enabling automatically rerunning cells during editing",
   "keywords": [
@@ -12,7 +12,7 @@
     "url": "https://github.com/chstan/jupyterlab-autorun.git/issues"
   },
   "license": "BSD-3-Clause",
-  "author": "Conrad Stansbury",
+  "author": "Conrad Stansbury/DoctorLoop",
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
@@ -22,15 +22,15 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chstan/jupyterlab-autorun.git"
+    "url": "https://github.com/chstan/jupyterlab-autorun_reword.git"
   },
   "scripts": {
     "build": "jlpm install && tsc",
     "build:dev": "jlpm run build && jlpm run lab:install",
     "lab:install": "jupyter labextension install .",
     "lab:link": "jupyter labextension install . --no-build",
-    "lab:uninstall": "jupyter labextension uninstall @jupyterlab/autorun",
-    "lab:unlink": "jupyter labextension uninstall @jupyterlab/autorun --no-build",
+    "lab:uninstall": "jupyter labextension uninstall @jupyterlab/autorun_reword",
+    "lab:unlink": "jupyter labextension uninstall @jupyterlab/autorun_reword --no-build",
     "precommit": "lint-staged",
     "watch": "tsc -w"
   },
